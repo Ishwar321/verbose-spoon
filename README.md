@@ -1,64 +1,72 @@
 <<<<<<< HEAD
-# Doctor Appointment System MERN Project
+# Doctor Appointment System (MERN)
 
-This is a MERN stack project for booking doctor appointments. It includes user authentication, protected routes, and a basic frontend and backend structure.
+This is a robust, role-based Doctor Appointment System built with the MERN stack (MongoDB, Express, React, Node.js). It provides unique dashboards and workflows for Patients, Doctors, and Admins, with a modern UI and professional features.
 
-## Project Structure
+## Features
 
-- `client/` - React frontend
-- `config/` - Backend configuration (e.g., database)
-- `controllers/` - Express controllers
-- `middlewares/` - Express middlewares
-- `models/` - Mongoose models
-- `routes/` - Express routes
-- `server.js` - Express server entry point
+- **Role-based authentication:** Separate flows for Patients, Doctors, and Admins
+- **Admin Dashboard:** Manage users, doctors, appointments, and approvals
+- **Doctor Dashboard:** View stats, manage appointments, patients, and availability
+- **Patient Dashboard:** Book appointments, view history, and manage profile
+- **Real-time notifications** and status updates
+- **Responsive, modern UI** with Material-UI
+- **Secure JWT authentication**
+
+## Tech Stack
+
+- **Frontend:** React, Material-UI, Redux
+- **Backend:** Node.js, Express
+- **Database:** MongoDB (Mongoose)
+- **Other:** WebSockets, Node-Cron, JWT
 
 ## Getting Started
 
-### Backend
-1. Install dependencies:
+### Prerequisites
+- Node.js (v16+ recommended)
+- MongoDB Atlas or local MongoDB
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+2. Install server dependencies:
    ```bash
    npm install
    ```
-2. Create a `.env` file in the root with your MongoDB URI and other environment variables:
-   ```env
-   MONGO_URL=your_mongodb_connection_string
-   NODE_MODE=development
-   port=8080
-   ```
-3. Start the backend server:
-   ```bash
-   npm start
-   ```
-
-### Frontend
-1. Go to the `client` folder:
+3. Install client dependencies:
    ```bash
    cd client
-   ```
-2. Install dependencies:
-   ```bash
    npm install
+   cd ..
    ```
-3. Start the React app:
-   ```bash
-   npm start
-   ```
+4. Create a `.env` file in the root with your MongoDB URI and JWT secret (see `.env.example`).
 
-## Features
-- User registration and login
-- JWT authentication
-- Protected routes
-- Basic homepage
+### Running the App
+Start both the server and client (in separate terminals):
+```bash
+npm run server   # Starts backend on port 8080
+npm run client   # Starts frontend on port 3000
+```
 
-## To Do
-- Add doctor management
-- Appointment booking
-- Admin panel
+### Default Roles
+- **Admin:** Can manage all users, doctors, and appointments
+- **Doctor:** Can view/manage their appointments, patients, and profile
+- **Patient:** Can book appointments, view history, and manage profile
 
----
+## Folder Structure
 
-For more details, see the YouTube tutorial playlist: https://youtube.com/playlist?list=PLuHGmgpyHfRw0wBGN8knxsJsMi74r34zw
-=======
-# verbose-spoon
->>>>>>> 76d1b1e1a10304b299214422c0dd05f197d2cc80
+- `/client` - React frontend
+- `/controllers` - Express controllers
+- `/models` - Mongoose models
+- `/routes` - Express routes
+- `/middlewares` - Auth and error handling
+- `/cronJobs` - Scheduled tasks (e.g., appointment status updates)
+- `/config` - Database config
+
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+
