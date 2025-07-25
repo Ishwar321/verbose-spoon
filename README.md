@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Doctor Appointment System MERN Project
 
 This is a MERN stack project for booking doctor appointments. It includes user authentication, protected routes, and a basic frontend and backend structure.
@@ -58,3 +59,6 @@ This is a MERN stack project for booking doctor appointments. It includes user a
 ---
 
 For more details, see the YouTube tutorial playlist: https://youtube.com/playlist?list=PLuHGmgpyHfRw0wBGN8knxsJsMi74r34zw
+=======
+# verbose-spoon
+>>>>>>> 76d1b1e1a10304b299214422c0dd05f197d2cc80
