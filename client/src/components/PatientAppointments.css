@@ -1,0 +1,22 @@
+.patient-appointments-container {
+ padding: 20px;
+}
+
+.appointments-section {
+ margin-bottom: 20px;
+}
+
+.appointments-section h3 {
+ margin-bottom: 10px;
+}
+
+.appointments-list {
+ list-style: none;
+ padding: 0;
+}
+
+.appointment-item {
+ border: 1px solid #ccc;
+ padding: 10px;
+ margin-bottom: 10px;
+}
